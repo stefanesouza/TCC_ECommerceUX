@@ -1,0 +1,50 @@
+\input{fixos/pacotes}
+\input{fixos/comandos}
+\usepackage{fixos/customizacoes}
+\usepackage{multirow}
+\usepackage{nameref}
+
+\input{editaveis/tccinfos}
+\input{fixos/informacoes}
+\input{fixos/setup}
+
+\begin{document}
+
+\frenchspacing 
+\imprimircapa
+\imprimirfolhaderosto*
+
+\input{fixos/fichaCatalografica}
+% \input{editaveis/errata}
+\input{fixos/folhaDeAprovacao}
+\input{editaveis/dedicatoria}
+\input{editaveis/agradecimentos}
+\input{editaveis/epigrafe}
+\input{editaveis/resumo}
+\input{editaveis/abstract}
+\input{fixos/listasAutomaticas}
+\input{editaveis/siglas}
+% \input{editaveis/(not)simbolos}
+\input{fixos/indiceAutomatico}
+
+\textual
+
+% \input{editaveis/padraointroducao}
+\input{editaveis/1introducao}
+\input{editaveis/2refteorico}
+\input{editaveis/3reftecno}
+\input{editaveis/4metodologia}
+\input{editaveis/5proposta}
+\input{editaveis/6status}
+
+\bookmarksetup{startatroot} 
+
+\postextual
+
+\bibliography{bibliografia} 
+% \input{editaveis/apendices}
+% \input{editaveis/anexos}
+\printindex
+
+\end{document}
+
