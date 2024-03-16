@@ -1,0 +1,25 @@
+\local{Brasília, DF}
+\instituicao{%
+  Universidade de Brasília -- UnB
+  \par
+  Faculdade UnB Gama -- FGA
+}
+\tipotrabalho{Trabalho de Conclusão de Curso}
+\preambulo{Monografia submetida ao curso de graduação em \imprimircurso\ 
+da Universidade de Brasília, como requisito parcial para obtenção do Título 
+de Bacharel em \imprimircurso.}
+
+% Novo list of (listings) para QUADROS
+
+\newcommand{\quadroname}{Quadro}
+\newcommand{\listofquadrosname}{Lista de quadros}
+
+\newfloat[chapter]{quadro}{loq}{\quadroname}
+\newlistof{listofquadros}{loq}{\listofquadrosname}
+\newlistentry{quadro}{loq}{0}
+
+% configurações para atender às regras da ABNT
+\setfloatadjustment{quadro}{\centering}
+\counterwithout{quadro}{chapter}
+\renewcommand{\cftquadroname}{\quadroname\space} 
+\renewcommand*{\cftquadroaftersnum}{\hfill--\hfill}
